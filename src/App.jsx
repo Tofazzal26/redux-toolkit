@@ -5,6 +5,7 @@ import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "./lib/counterSlice";
 import Post from "./Components/Post/Post";
+import Ori from "./Components/Ori/Ori";
 
 function App() {
   const count = useSelector((state) => state.counter.value);
@@ -76,6 +77,9 @@ function App() {
         <div className="container mx-auto">
           <div className="my-10">
             <Post />
+          </div>
+          <div>
+            <Ori />
           </div>
         </div>
       </div>
